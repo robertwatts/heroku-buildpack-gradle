@@ -52,7 +52,7 @@ else
   BUILDCMD="gradle -I $OPT_DIR/init.gradle"
 fi
 
-BUILDCMD="$BUILDCMD $GRADLE_TASK"
+BUILDCMD="$BUILDCMD -I nexus-tunnel.gradle $GRADLE_TASK"
 
 cd $BUILD_DIR
 
